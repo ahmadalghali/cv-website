@@ -12,34 +12,44 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- <button v-on:click="scrollToElement({behavior: 'smooth'})">
-    Smooth scroll to first element with class of .index-50
-  </button> -->
-
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" @click="scrollTo('projects')">Projects</a>
-
-          <!-- <router-link class="nav-link">Projects</router-link> -->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" @click="scrollTo('resume')">Resume</a>
-
-          <!-- <router-link class="nav-link">Resume</router-link> -->
-        </li>
-        <li class="nav-item">
-          <!-- <router-link class="nav-link" :to="{ name: 'Contact' }"
-            >Contact</router-link
-          > -->
-          <a class="nav-link" @click="scrollTo('contact')">Contact</a>
+          <a
+            class="nav-link"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            @click="scrollTo('skills')"
+            >Skills</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" @click="scrollTo('skills')">Skills</a>
-          <!-- <router-link class="nav-link" :to="{ name: 'Home', hash: '#skills' }"
-            >Skills</router-link
-          > -->
+          <a
+            class="nav-link"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            @click="scrollTo('projects')"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            @click="scrollTo('resume')"
+            >Resume</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            @click="scrollTo('contact')"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
@@ -56,7 +66,9 @@ export default {
   },
   methods: {
     scrollTo(id) {
-      document.getElementById(id).scrollIntoView({
+      let element = document.getElementById(id);
+      window.scroll({
+        top: element.offsetTop - 100,
         behavior: "smooth",
       });
     },
@@ -64,9 +76,10 @@ export default {
 };
 </script>
 
-<style>
-.a {
+<style scoped>
+a {
   text-decoration: none;
   color: grey;
+  cursor: pointer;
 }
 </style>

@@ -1,18 +1,20 @@
 <template>
   <div class="container">
     <div class="row">
-      <img
-        src="@/assets/ahmad-alghali.jpg"
-        class="my-photo rounded-circle img-fluid mx-auto mt-5"
-        alt="Photo of me"
-      />
+      <div class="col text-center">
+        <img
+          src="@/assets/ahmad-alghali.jpg"
+          class="my-photo rounded-circle img-fluid mx-auto mt-5"
+          alt="Photo of me"
+        />
+      </div>
     </div>
 
     <h1 class="display-5 text-center mt-5">
       Hello, I am Ahmad, a backend developer.
     </h1>
 
-    <div class="container experience">
+    <!-- <div class="container experience">
       <h1>Work Experience</h1>
       <br />
       <br />
@@ -28,9 +30,11 @@
         basic tasks like preparing breakfast and cleaning up to physiotherapy
         sessions, it gave me an opportunity to help out the less fortunate.
       </p>
-    </div>
+    </div> -->
+    <!-- </div> -->
 
-    <div id="skills" class="container skills">
+    <Skills />
+    <!-- <div id="skills" class="container skills">
       <h1>Skills</h1>
       <br />
       <br />
@@ -60,9 +64,11 @@
           </div>
         </div>
       </ul>
-    </div>
+    </div> -->
+    <WorkExperience />
 
-    <div class="container-fluid hobbies">
+    <Hobbies />
+    <!-- <div class="container-fluid hobbies">
       <h1>Hobbies</h1>
       <br />
       <br />
@@ -102,43 +108,7 @@
           />
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-6">
-          <ul>
-            <li>Flying Drones</li>
-            <br />
-
-            <li>Wild Camping</li>
-          </ul>
-        </div>
-        <div class="col-6">
-          <img
-            src="@/assets/hiking.jpg"
-            class="my-photo rounded img-fluid pb-4"
-            alt="Climbing the summit of pen-y-fan"
-          />
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-6">
-          <img
-            src="../assets/fishing.jpg"
-            class="my-photo rounded img-fluid pb-4"
-            alt="4.5KG Bass caught in Brighton"
-          />
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Fishing</li>
-            <br />
-            <li>Basketball</li>
-            <br />
-          </ul>
-        </div>
-      </div> -->
-    </div>
+    </div> -->
 
     <br />
     <br />
@@ -148,9 +118,17 @@
 </template>
 
 <script>
+import Skills from "@/components/Skills.vue";
+import Hobbies from "@/components/Hobbies.vue";
+import WorkExperience from "@/components/WorkExperience.vue";
+
 export default {
   name: "Home",
-  components: {},
+  components: {
+    Skills,
+    Hobbies,
+    WorkExperience,
+  },
 };
 </script>
 <style scoped>
@@ -176,19 +154,17 @@ ul li {
   font-size: 25px;
 
   margin-bottom: 30px;
-
-  /* text-align: center; */
 }
 
-p {
+/* p {
   font-size: larger;
-}
+} */
 
 li {
   font-size: larger;
 }
 
-.skills img {
+/* .skills img {
   width: 50px;
-}
+} */
 </style>
