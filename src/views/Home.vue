@@ -13,7 +13,7 @@
     </h1>
 
     <div class="container experience">
-      <h2>Work Experience</h2>
+      <h1>Work Experience</h1>
       <br />
       <br />
       <br />
@@ -30,7 +30,7 @@
       </p>
     </div>
 
-    <div class="container skills">
+    <div id="skills" class="container skills">
       <h1>Skills</h1>
       <br />
       <br />
@@ -62,36 +62,42 @@
       </ul>
     </div>
 
-    <div class="container hobbies">
-      <h2>Hobbies</h2>
+    <div class="container-fluid hobbies">
+      <h1>Hobbies</h1>
       <br />
       <br />
       <br />
 
       <div class="row">
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4">
           <img
             src="../assets/fishing.jpg"
-            class="my-photo rounded img-fluid pb-4"
+            class="my-photo rounded img-fluid pb-4 mx-auto"
             alt="4.5KG Bass caught in Brighton"
           />
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4 text-center">
           <ul>
-            <li>Fishing</li>
-            <br />
-            <li>Basketball</li>
-            <br />
-            <li>Flying Drones</li>
-            <br />
+            <div class="row">
+              <div class="col-sm-6 col-md-10">
+                <li><b>Fishing</b></li>
+                <br />
+                <li><b>Basketball</b></li>
+              </div>
+              <div class="col-sm-6 col-md-10">
+                <br />
 
-            <li>Wild Camping</li>
+                <li><b>Flying Drones</b></li>
+                <br />
+                <li><b>Wild Camping</b></li>
+              </div>
+            </div>
           </ul>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4">
           <img
             src="@/assets/hiking.jpg"
-            class="my-photo rounded img-fluid pb-4"
+            class="my-photo rounded img-fluid pb-4 mx-auto"
             alt="Climbing the summit of pen-y-fan"
           />
         </div>
