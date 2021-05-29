@@ -108,7 +108,7 @@ export default {
           ],
         },
         {
-          id: "1",
+          id: "2",
           title: "madPropertyPal",
           description:
             "This is a standalone mobile application developed in Android Studio as the assignment of my Mobile Application Development module in final year. The app helps property agents to document properties and other data regarding potential buyers and offers.",
@@ -134,8 +134,24 @@ export default {
             "https://github.com/ahmadalghali/madPropertyPalCordova",
           ],
         },
+        {
+          id: "3",
+          title: "TheUniBook",
+          description:
+            "As part of our coursework specification for Enterprise Web Development module in final year, we were to get into teams with each memeber having specific skills and together we were to adopt an Agile Scrum approach by using Kanban boards, user stories, planning poker and daily standup meetings. \n\n The specifcation required the developement of a secure web application for universities to use a platform for idea suggestions, all general staff can contribute by sharing their ideas that can be upvoted and commented on. It is also a role-based system which incluedes a QA Manager, QA coordinator, System administrator and general Staff.",
+          images: [],
+          technologies: [
+            "Spring Boot (Java)",
+            "SQL Server (Azure Portal)",
+            "HTML, CSS & JavaScript",
+          ],
+          links: [
+            "https://youtu.be/6BuefvYEAUc",
+            "https://github.com/ahmadalghali/theunibook",
+            "https://github.com/ahmadalghali/theunibook-frontend",
+          ],
+        },
       ],
-      //   active: false,
     };
   },
   methods: {
