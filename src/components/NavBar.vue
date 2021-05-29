@@ -1,8 +1,10 @@
 <template>
   <nav class="navbar sticky-top ps-4 pe-4 navbar-expand-sm navbar-dark bg-dark">
-    <router-link class="navbar-brand" :to="{ name: 'Home' }"
+    <!-- <router-link class="navbar-brand" :to="{ name: 'Home' }"
       >Ahmad Alghali</router-link
-    >
+    > -->
+
+    <a class="navbar-brand" @click="scrollTo('bio')">Ahmad Alghali</a>
 
     <button
       class="navbar-toggler"
@@ -38,8 +40,8 @@
             class="nav-link"
             data-bs-toggle="collapse"
             data-bs-target="#navMenu"
-            @click="scrollTo('resume')"
-            >Resume</a
+            @click="scrollTo('experience')"
+            >Experience</a
           >
         </li>
         <li class="nav-item">

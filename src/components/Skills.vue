@@ -5,7 +5,7 @@
     <br />
     <br />
     <ul>
-      <div class="row">
+      <div class="row ms-5">
         <div class="col-sm-12 col-md-6 col-lg-4">
           <li><img src="../assets/java.webp" alt="" /> &nbsp; Java</li>
 

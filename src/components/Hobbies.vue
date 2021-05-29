@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid hobbies">
+  <div class="container hobbies">
     <h1>Hobbies</h1>
     <br />
     <br />
@@ -9,24 +9,22 @@
       <div class="col-sm-12 col-md-4">
         <img
           src="../assets/fishing.jpg"
-          class="my-photo rounded img-fluid pb-4 mx-auto"
+          class="my-photo rounded img-fluid mx-auto shadow-lg"
           alt="4.5KG Bass caught in Brighton"
         />
       </div>
-      <div class="col-sm-12 col-md-4 text-center">
+      <div class="col-sm-12 col-md-4 text-center align-self-center">
         <ul>
           <div class="row">
-            <div class="col-sm-6 col-md-10">
-              <li><b>Fishing</b></li>
+            <div class="col">
+              <li><b class="display-6">Fishing</b></li>
               <br />
-              <li><b>Basketball</b></li>
-            </div>
-            <div class="col-sm-6 col-md-10">
+              <li><b class="display-6">Basketball</b></li>
               <br />
 
-              <li><b>Flying Drones</b></li>
+              <li><b class="display-6">Drone Videography</b></li>
               <br />
-              <li><b>Wild Camping</b></li>
+              <li><b class="display-6">Wild Camping</b></li>
             </div>
           </div>
         </ul>
@@ -34,7 +32,7 @@
       <div class="col-sm-12 col-md-4">
         <img
           src="@/assets/hiking.jpg"
-          class="my-photo rounded img-fluid pb-4 mx-auto"
+          class="my-photo rounded img-fluid mx-auto shadow-lg"
           alt="Climbing the summit of pen-y-fan"
         />
       </div>

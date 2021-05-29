@@ -1,0 +1,8 @@
+{
+    "id": "1",
+    "title": "Timeshare",
+    "description": "This is an idea I came up with for my final year project which was an investigation into Timebanking to develop an online Tutoring Mobile Application designed for local communities.",
+    "images": ["../assets/timeshare/welcome.jpg", "../assets/timeshare/welcome.jpg"],
+    "technologies": ["Spring Boot (Java)", "SQL", "Android Studio"],
+    "links": ["https://github.com/ahmadalghali/timeshare-frontend", "https://github.com/ahmadalghali/demo-timeshare"]
+}
