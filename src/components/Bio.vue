@@ -1,17 +1,28 @@
 <template>
   <div id="bio" class="container bio">
     <div class="row">
-      <div class="col-1"></div>
+      <div class="col-2"></div>
 
-      <div class="col-10 text-center hover-zoom bg-image">
+      <div class="col-8 text-center hover-zoom bg-image">
         <img
           src="@/assets/ahmad-alghali.jpg"
-          class="my-photo rounded-circle img-fluid mx-auto mt-5 view overlay zoom shadow-lg hover-shadow"
+          class="
+            my-photo
+            rounded-circle
+            img-fluid
+            mx-auto
+            mt-5
+            view
+            overlay
+            zoom
+            shadow-lg
+            hover-shadow
+          "
           alt="Photo of me"
         />
       </div>
 
-      <div class="col-1 align-self-center">
+      <div class="col-2 align-self-center mt-5">
         <a href="https://github.com/ahmadalghali" target="_blank"
           ><img src="@/assets/github.svg" class="socials"
         /></a>

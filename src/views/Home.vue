@@ -6,40 +6,34 @@
 
     <Projects />
 
-    <WorkExperience />
+    <!-- <Experience /> -->
+    <Education />
 
     <Hobbies />
 
     <Contact />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </div>
 </template>
 
 <script>
 import Skills from "@/components/Skills.vue";
 import Hobbies from "@/components/Hobbies.vue";
-import WorkExperience from "@/components/WorkExperience.vue";
+import Experience from "@/components/Experience.vue";
 import Bio from "@/components/Bio.vue";
 import Projects from "@/components/Projects.vue";
 import Contact from "@/components/Contact.vue";
+import Education from "@/components/Education.vue";
 
 export default {
   name: "Home",
   components: {
     Skills,
     Hobbies,
-    WorkExperience,
+    Experience,
     Bio,
     Projects,
     Contact,
+    Education,
   },
 };
 </script>
@@ -54,6 +48,7 @@ export default {
 
 .contact {
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 
 .projects {

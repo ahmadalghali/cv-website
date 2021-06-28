@@ -9,11 +9,12 @@
         <div class="col-sm-12 col-md-6 col-lg-4">
           <li><img src="../assets/java.webp" alt="" /> &nbsp; Java</li>
 
-          <li><img src="../assets/postman.jpeg" alt="" />&nbsp; Postman</li>
+          <!-- <li><img src="../assets/postman.jpeg" alt="" />&nbsp; Postman</li> -->
           <li><img src="../assets/git.png" alt="" /> &nbsp; Git</li>
           <li>
             <img src="../assets/android.png" alt="" />&nbsp; Android Development
           </li>
+          <li><img src="../assets/agile.png" alt="" />&nbsp; Agile Scrum</li>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
           <li>
@@ -22,7 +23,6 @@
           </li>
           <li><img src="../assets/js.png" alt="" /> &nbsp; JavaScript</li>
           <li><img src="../assets/github.svg" alt="" />&nbsp; GitHub</li>
-          <li><img src="../assets/agile.png" alt="" />&nbsp; Agile Scrum</li>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
           <li><img src="../assets/sql.png" alt="" /> &nbsp; SQL</li>

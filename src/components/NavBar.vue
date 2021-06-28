@@ -35,13 +35,22 @@
             >Projects</a
           >
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a
             class="nav-link"
             data-bs-toggle="collapse"
             data-bs-target="#navMenu"
             @click="scrollTo('experience')"
             >Experience</a
+          >
+        </li> -->
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            @click="scrollTo('education')"
+            >Education</a
           >
         </li>
         <li class="nav-item">

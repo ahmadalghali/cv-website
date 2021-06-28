@@ -63,13 +63,39 @@
       <br /><br /><br />
 
       <h5>Technologies:</h5>
-      <ul v-for="technology in project.technologies" :key="technology">
-        <li>{{ technology }}</li>
+      <ul>
+        <li v-for="technology in project.technologies" :key="technology">
+          {{ technology }}
+        </li>
       </ul>
 
+      <div class="ratio ratio-16x9" v-if="project.links[0].isVideo">
+        <iframe
+          :src="project.links[0].url"
+          :title="project.links[0].title"
+          allowfullscreen
+          width="400"
+          height="200"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          autopla
+        ></iframe>
+
+        <!-- <iframe
+          width="1424"
+          height="652"
+          src="https://www.youtube.com/embed/-N_RZJUAQY4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe> -->
+      </div>
+      <br />
       <h5>Links:</h5>
       <div v-for="link in project.links" :key="link">
-        <a :href="link" target="_blank">{{ link }}</a>
+        <a :href="link.url" target="_blank">{{
+          link.title ? link.title : link.url
+        }}</a>
         <br />
       </div>
     </div>
@@ -101,15 +127,25 @@ export default {
             "https://lh3.googleusercontent.com/1BYp0xIQ2viCO_Odcg2Dmz_UadrK3s3v_dYHTugZWa6iQ_mE8n1-b2uRWR35o0_37vy95RujtSsPkp6eTnbox6D_Taalqr-UqRDfec7Fx2K5M7mpHXCIaZ3oZCfAaRNemcaHC7KjsoWWuzTDtd4hkUbwRirXmiIaUnqKEDz3tmzLCGGYeK86Hmb1LofcvvzSeRUApRYAdM8i50rY3_rnF2GOp4RhVupvGUEQz8hfsyxbdj7H410y2yslJxMAyYJZ2nXGcbsXVNaXOK9AH7UENbxTxVWb6Jg5P4AvPZSzI6xmVjTL0I9vlJnnDscp0b-lerIwaPSBUf5YbRp7WpUDHjG_xb_aIbBYhS1f4EfUzNNhGUT7fEciuD9nsrhzPy14Ph3zyK0K-_196YzRQo9LXoTrqHDajfUSr5mETmZobn0UnjOYYCYz-YizmSedosqtNiO0MmUVMUELiEa2NuX0W1JkTqRwq9YzwmvEp84oOseXy-mOB_qbT_uhQzg18rnoKmRm6WzpPNKoolbWfZqG-POYIPVpOuuzsSspQHB2D5rVnji5H_mTpIEaVm2Kx_UJkFYfwNAHpYaKWUceKSi8Ak3DSGclgZwAn44-jMw7UiE1FTmPPL9DkcnH26ePK3qtE_fazKfxH-OGvmSArHJlGCCTb6yIGekszOexLsAIpKz638LcVekhVeee0r2A0EbhCHi4x2IEVSSecHFfZ7Y5llY=w702-h1402-no?authuser=0",
             "https://lh3.googleusercontent.com/cQKSaIsbg-b-yGs4vhc4Fx_VUKUGtZsM25M-pVC11a2WUd0-FA7cyEnB1DRUr3YLvd_TIjRYc8dd-w8378vnZlB3AEq_eAJcas_A2GqmFDZhRZO0LNcESRafbOyn3eOr37Sn7JBzk6ajAOkL15Y_rXqMXVZ7u-OZgvTmhaffQoDL1lU58nrh_1e5U0FyCxc1RUhjmpE3RQ72YxLA0stpWjKAxS1frM1zT3eX98tK7SFdfz-hEXJrKeVrKs0WK73BJgNitJjDCTbqcMb55hs-uL6QMvN0LPQm1g1vwx6bGQ92n0tDeuU9ndehdmfLO7Qyy943vNp-0FyaLy1n1n5G4k9Frb2YkljhKT0gl6C3gbNmFwYD9hru8qUVzhBqcD4CSgLSX6B_i29HzO_Im8BckXjh0R1h_wi3D9LFHfaDakmJy02fToG2rsHFU1ofmDNWW6Q2Yfrd_rcSMCfupSWUl1c_F6cCkAojk4XydzQ2YMbDIQaNpBP6APppLK4-KdLfHn2Q6BsV3QMNN5dIJio_J-4vdOOmFB-8WRTMKBWZtI1T3kflgwOyCkP7X1vBSSaslzAosUPiylpv0UaJLROpGMVwO_7yMLTPh_Kl8WSwqHQ1MvkVihqWzvVU6WHUJ0Xx-21MWey7s7T-_wBpJg-O0992Jp8VJ06V0P9P6uEN83ojxvkxbvNzxZErhiSmYakrEmUlXTfP-NCbSAGiiQ3UesE=w702-h1402-no?authuser=0",
           ],
-          technologies: ["Spring Boot (Java)", "SQL", "Android Studio"],
+          technologies: [
+            "Spring Boot (Java)",
+            "SQL",
+            "Android Studio",
+            "Firebase",
+          ],
           links: [
-            "https://github.com/ahmadalghali/timeshare-frontend",
-            "https://github.com/ahmadalghali/demo-timeshare",
+            {
+              url: "https://www.youtube.com/embed/1wInNwdrN88",
+              title: "YouTube video: Timeshare",
+              isVideo: true,
+            },
+            { url: "https://github.com/ahmadalghali/Timeshare" },
+            { url: "https://github.com/ahmadalghali/Timeshare-api" },
           ],
         },
         {
           id: "2",
-          title: "madPropertyPal",
+          title: "PropertyPal",
           description:
             "This is a standalone mobile application developed in Android Studio as the assignment of my Mobile Application Development module in final year. The app helps property agents to document properties and other data regarding potential buyers and offers.",
           images: [
@@ -129,9 +165,15 @@ export default {
             "Cordova (PhoneGap)",
           ],
           links: [
-            "https://youtu.be/6BuefvYEAUc",
-            "https://github.com/ahmadalghali/madPropertPal",
-            "https://github.com/ahmadalghali/madPropertyPalCordova",
+            {
+              url: "https://youtube.com/embed/6BuefvYEAUc",
+              title: "YouTube video: PropertyPal",
+              isVideo: true,
+            },
+            {
+              url: "https://github.com/ahmadalghali/PropertyPal",
+              title: null,
+            },
           ],
         },
         {
@@ -142,15 +184,42 @@ export default {
           images: [],
           technologies: [
             "Spring Boot (Java)",
-            "SQL Server (Azure Portal)",
+            "SQL Server (Azure)",
             "HTML, CSS & JavaScript",
           ],
           links: [
-            "https://youtu.be/6BuefvYEAUc",
-            "https://github.com/ahmadalghali/theunibook",
-            "https://github.com/ahmadalghali/theunibook-frontend",
+            {
+              url: "https://youtube.com/embed/zrjPQFqCOCI",
+              title: "YouTube video: TheUniBook",
+              isVideo: true,
+            },
+            {
+              url: "https://github.com/ahmadalghali/TheUniBook",
+              title: null,
+              isVideo: true,
+            },
+            {
+              url: "https://github.com/ahmadalghali/TheUniBook-api",
+              title: null,
+            },
           ],
         },
+        // {
+        //   id: "4",
+        //   title: "ahmadzon",
+        //   description:
+        //     "A personal hobby project currently under development in my spare time, it is aimed to be an amazon ecommerce clone, hence the name.",
+        //   images: [],
+        //   technologies: [
+        //     "Spring Boot (Java)",
+        //     "MySQL",
+        //     "HTML, CSS & JavaScript",
+        //   ],
+        //   links: [
+        //     "https://github.com/ahmadalghali/ahmadzon",
+        //     "https://github.com/ahmadalghali/ahmadzon-frontend",
+        //   ],
+        // },
       ],
     };
   },
@@ -184,7 +253,10 @@ export default {
 
 ul li {
   font-size: 18px;
-  margin-bottom: 30px;
+  list-style: none;
+  /* margin-right: 50px; */
+  /* display: inline; */
+  margin-bottom: 20px;
 }
 
 .carousel img {

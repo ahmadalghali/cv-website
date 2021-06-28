@@ -7,7 +7,8 @@
 
     <div class="position">
       <h4>
-        <b>Graduate in BSc Computing</b> - <em>Univeristy of Greenwich</em>
+        <b>{{ "Graduate in BSc Computing" }}</b> -
+        <em>University of Greenwich</em>
       </h4>
       <h5>
         <em>Sept 2018 - May 2021</em>
@@ -27,13 +28,38 @@
         inventore, impedit tempore mollitia ipsa. Sint similique enim fuga
         perspiciatis, nisi placeat esse maxime nihil sapiente nulla ratione
         facere ab, autem labore quis veniam expedita minus ipsa?
-        <!-- I worked as my first job as an assistant for a disabled person. From
-        basic tasks like preparing breakfast and cleaning up to physiotherapy
-        sessions, it gave me an opportunity to help out the less fortunate. -->
       </p>
     </div>
 
-    <div class="position">
+    <!-- <div class="position">
+      <h4>
+        <b>Graduate in BSc Computing</b> - <em>University of Greenwich</em>
+      </h4>
+      <h5>
+        <em>Sept 2018 - May 2021</em>
+      </h5>
+
+      <br />
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+        reiciendis cum non voluptas. Iure ex mollitia impedit numquam et iusto
+        cum accusamus voluptatibus voluptate? Quo explicabo distinctio at!
+        Fugiat ducimus doloribus sunt officiis molestias reprehenderit provident
+        illum facilis repudiandae aut sit magnam repellendus maxime, placeat
+        possimus ea veritatis distinctio nesciunt velit animi. Neque veniam odit
+        labore deleniti? Exercitationem voluptate recusandae nam aliquam vel
+        dolorem in maiores dolor minima quia quas officiis beatae, ut,
+        inventore, impedit tempore mollitia ipsa. Sint similique enim fuga
+        perspiciatis, nisi placeat esse maxime nihil sapiente nulla ratione
+        facere ab, autem labore quis veniam expedita minus ipsa?
+        
+      </p>
+    </div> -->
+    <!-- I worked as my first job as an assistant for a disabled person. From
+        basic tasks like preparing breakfast and cleaning up to physiotherapy
+        sessions, it gave me an opportunity to help out the less fortunate. -->
+    <!-- <div class="position">
       <h4><b>Disabled person assistant</b></h4>
       <h5>
         <em>July 2018 - Sept 2018</em>
@@ -55,13 +81,26 @@
         recusandae rem officia quaerat dolores sunt repellat perspiciatis magni
         deserunt voluptate ipsa eius veritatis!
       </p>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "WorkExperience",
+  name: "Experience",
+  data() {
+    return {
+      positions: [
+        {
+          id: "1",
+          title: "",
+          location: "",
+          period: "",
+          description: "",
+        },
+      ],
+    };
+  },
 };
 </script>
 
