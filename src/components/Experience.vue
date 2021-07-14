@@ -1,33 +1,41 @@
 <template>
   <div id="experience" class="container experience">
     <h1>Experience</h1>
-    <br />
+    <hr />
     <br />
     <br />
 
     <div class="position">
       <h4>
-        <b>{{ "Graduate in BSc Computing" }}</b> -
-        <em>University of Greenwich</em>
+        <b>{{ "Freelance Fullstack Web Developer" }}</b> -
+        <em class="display-6 fs-4 user-select-all"
+          >londontuitionacademy.netlify.app</em
+        >
       </h4>
-      <h5>
-        <em>Sept 2018 - May 2021</em>
-      </h5>
+      <h5 class="text-secondary">June 2021 - Present</h5>
 
       <br />
 
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
-        reiciendis cum non voluptas. Iure ex mollitia impedit numquam et iusto
-        cum accusamus voluptatibus voluptate? Quo explicabo distinctio at!
-        Fugiat ducimus doloribus sunt officiis molestias reprehenderit provident
-        illum facilis repudiandae aut sit magnam repellendus maxime, placeat
-        possimus ea veritatis distinctio nesciunt velit animi. Neque veniam odit
-        labore deleniti? Exercitationem voluptate recusandae nam aliquam vel
-        dolorem in maiores dolor minima quia quas officiis beatae, ut,
-        inventore, impedit tempore mollitia ipsa. Sint similique enim fuga
-        perspiciatis, nisi placeat esse maxime nihil sapiente nulla ratione
-        facere ab, autem labore quis veniam expedita minus ipsa?
+      <ul class="fs-5">
+        <li>
+          Building a fullstack web application for a tutoring business in London
+        </li>
+        <li>
+          Liaising directly with client and expecting a <b>100%</b> increase in
+          no. of students by January 2022
+        </li>
+        <li>
+          Upgraded from manual booking process to fully automated student
+          booking service with email confirmation
+        </li>
+        <li>
+          Implemented a scheduling assistant and a monitored student-to-tutor
+          live chat feature using WebSockets
+        </li>
+      </ul>
+      <br />
+      <p class="fs-4">
+        <b>Technologies:</b> Spring Boot (Java), Vue.js, PostgreSQL, Bootstrap
       </p>
     </div>
 

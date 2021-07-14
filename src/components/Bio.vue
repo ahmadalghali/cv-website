@@ -41,7 +41,7 @@
     </div>
 
     <h1 class="display-5 text-center mt-5">
-      Hello, I am Ahmad, a backend developer.
+      Hello, I am Ahmad, a software developer.
     </h1>
   </div>
 </template>

@@ -4,10 +4,11 @@
 
     <Skills />
 
-    <Projects />
+    <Experience />
 
-    <!-- <Experience /> -->
     <Education />
+
+    <Projects />
 
     <Hobbies />
 

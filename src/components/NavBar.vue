@@ -25,17 +25,7 @@
             >Skills</a
           >
         </li>
-
         <li class="nav-item">
-          <a
-            class="nav-link"
-            data-bs-toggle="collapse"
-            data-bs-target="#navMenu"
-            @click="scrollTo('projects')"
-            >Projects</a
-          >
-        </li>
-        <!-- <li class="nav-item">
           <a
             class="nav-link"
             data-bs-toggle="collapse"
@@ -43,7 +33,8 @@
             @click="scrollTo('experience')"
             >Experience</a
           >
-        </li> -->
+        </li>
+
         <li class="nav-item">
           <a
             class="nav-link"
@@ -53,6 +44,16 @@
             >Education</a
           >
         </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            @click="scrollTo('projects')"
+            >Projects</a
+          >
+        </li>
+
         <li class="nav-item">
           <a
             class="nav-link"

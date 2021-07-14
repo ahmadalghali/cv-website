@@ -1,34 +1,20 @@
 <template>
   <div id="education" class="container education">
     <h1>Education</h1>
-    <br />
+    <hr />
     <br />
     <br />
 
     <div class="position">
       <h4>
-        <b>{{ "Graduate in BSc Computing" }}</b> -
-        <em>University of Greenwich</em>
+        <b>University of Greenwich - BSc (Hons) Computing 2:1</b>
+        <!-- <em>Sept 2018 - May 2021</em> -->
       </h4>
       <h5>
         <em>Sept 2018 - May 2021</em>
       </h5>
 
       <br />
-
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
-        reiciendis cum non voluptas. Iure ex mollitia impedit numquam et iusto
-        cum accusamus voluptatibus voluptate? Quo explicabo distinctio at!
-        Fugiat ducimus doloribus sunt officiis molestias reprehenderit provident
-        illum facilis repudiandae aut sit magnam repellendus maxime, placeat
-        possimus ea veritatis distinctio nesciunt velit animi. Neque veniam odit
-        labore deleniti? Exercitationem voluptate recusandae nam aliquam vel
-        dolorem in maiores dolor minima quia quas officiis beatae, ut,
-        inventore, impedit tempore mollitia ipsa. Sint similique enim fuga
-        perspiciatis, nisi placeat esse maxime nihil sapiente nulla ratione
-        facere ab, autem labore quis veniam expedita minus ipsa?
-      </p>
     </div>
 
     <!-- <div class="position">

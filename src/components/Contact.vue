@@ -1,6 +1,7 @@
 <template>
   <div id="contact" class="container contact">
     <h1>Contact</h1>
+    <hr />
     <br />
     <br />
 

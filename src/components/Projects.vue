@@ -12,17 +12,13 @@
       <h2 class="display-6">{{ project.title }}</h2>
       <br />
       <p class="project-description">
-        {{ project.description }} Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quae itaque, eligendi quaerat sint quasi dignissimos
-        magni odio quo animi ipsum nisi tempora veniam. Vel inventore beatae
-        voluptate, fugit labore praesentium. Culpa dicta perspiciatis corrupti
-        obcaecati facilis nihil, expedita architecto sunt.
+        {{ project.description }}
       </p>
 
       <br />
       <br /><br />
 
-      <div class="project-images">
+      <div class="project-images" v-if="project.images.length">
         <div
           :id="project.title"
           class="carousel carousel-dark slide carousel-fade"
@@ -59,15 +55,15 @@
           </button>
         </div>
       </div>
-      <br />
       <br /><br /><br />
 
-      <h5>Technologies:</h5>
+      <p class="h2 fs-3">Technologies:</p>
       <ul>
         <li v-for="technology in project.technologies" :key="technology">
-          {{ technology }}
+          <p class="display-6 fs-4">{{ technology }}</p>
         </li>
       </ul>
+      <br />
 
       <div class="ratio ratio-16x9" v-if="project.links[0].isVideo">
         <iframe
@@ -91,9 +87,10 @@
         ></iframe> -->
       </div>
       <br />
-      <h5>Links:</h5>
+      <br />
+      <h3>Links:</h3>
       <div v-for="link in project.links" :key="link">
-        <a :href="link.url" target="_blank">{{
+        <a :href="link.url" target="_blank" class="fs-4">{{
           link.title ? link.title : link.url
         }}</a>
         <br />
@@ -113,7 +110,7 @@ export default {
           id: "1",
           title: "Timeshare",
           description:
-            "This is an idea I came up with for my final year project which was an investigation into Timebanking to develop an online tutoring mobile application designed for local communities.",
+            "I researched about timebanks considering its possible applications for online tutoring to build a non-profit service-exchange system that can give anyone access to good education. I developed a mobile app, Timeshare, which allows users to teach what they love in return for TimeCredits that can be spent to learn a new skill.",
           images: [
             "https://lh3.googleusercontent.com/bOM3GIGsbER2yRAouuZvLYdEOYv8YasWriUH_7ZJcVCo3ZNQ9YyEKPu3O8JeUBdimSXO-vcyDPGQVVuXrycWKowDRcwKNv77vS_WI0c43Zl84H-E2pIgtiAJevkNvAxCznp8yaXGFQl5zyNySAZT4gP6ybVAcmLZwywEDj8hyVfyeiyVdWqXYV1crDcmX3CdsO0eiuNOGEPVE3wNd_bZ1jUsVhsOoFh_b0HJcj8wFagGaf2sDtrdMJPbmXWBTj8s1r7OqmfCccR9dGV9C0wXaYttAWESk_DeiedZQSFibEdBOBAk5f0eKxbfUn4pePXYT6Nn3PPkThgPgQkeaQGpIvMoGpuAqjYX1VmE94DdPkUA-KSpirKq3sEp53q4Byyk5OW9_c0aGN9ellGFCyGrNyfiSkYnXI6g-KXDaaZ6cuN1us455h83zlf2T1bTpnQnLRBW-PVVyZTsJ614rG-_7A9yNmtqLl83pYU6oMefhWC8rfW4qE9gZ3ZPR-sYsFpkCSWa91OZPzbEdlTc7BFcyXZNuiLL3qkSIp3brSvL5BgjvIBxvfzrfSJ_esjUjyLYio-6IN4L5OBqJkeT0EFoNLPC2ZIgBlSYFk6Wc_iWR18VKLT0_wezCdJtuQGqRSQusH0-K8fJADh2h5l16Atsk0V10Vl7h2gzGdygylIUg0Xb5FSwhb0JlP6NjJooqI1cu6_cKCoZU_fZle-L6XbNuaM=w796-h1592-no?authuser=0",
             "https://lh3.googleusercontent.com/QUSvrxGE0CCrmAZ1qOVW9I6qILLHy3uZczk0LUapkpNwbyNHdni5bzatPneY_ztKzWhLN5R4cRfTcwkE_l01dFVOIQlVdP8dqmM4x0K_jNadVcl5ykCAMiFQd0e4wyoYUkvMsPOVyuFJ1Iz5PnLB2r7jkRpNk5vsOUaubJ2bvQHdRHnL6ukn6AP7YS07j513L4YOQTB0xtO5-4IyUVVJCf4v4OQTYHm26w6tSBsBeDoKYKGTqaD9YOCDF66OtgeMphpUOBuc2vh-30iLwJ8m-X_DPjh9aeFARTPT2lGo0UqV2Jm2cZips64_h_c74boKA58oxM9-d8gXCJX2ITByqtxgF_w1AIzIxisQSiSb1fTqntbqSxtkgArFsz8a27_6ce5Wlw6SPX-nyDm0Nl0XYinlAd02YfES1fiWSlN3PmxJTJhqEDzyG7MFnV68eNQZi9J466ZAd4N1rvWMw0LvVHczCOldGVjSqW2RM4EaG2K8aAi3ZjMFq7FR05Y8smDhlKjeYc90Ys-NUZiSS6kcoDWTpu6eMLK-FdyyKoTxmwXv8u9pkhAKGlMZSLzaPs8th4ZRcxdyfO1w-DMe1cZLM97wnlbC1hfJAg3DSnOuBT1W0AOxWzzl29cn5-8i-XzeLn1tMCKZ-kpQ6nJdRsnGK0szLIS5rSpAA-UGOgfQTjWXCaE_pZ0AR5OQWRAAYgbxAc7HnRBl3CAnL3em3eTedcg=w501-h1001-no?authuser=0",
